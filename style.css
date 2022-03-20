@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand',sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.login{
+  display: flex;
+  width: 70%;
+  gap: 50px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.left{
+  width: 40%;
+}
+.logo img{
+  width: 150px;
+}
+
+.form .title{
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #524A4E;
+}
+.input-form{
+  background: #fff;
+  width: 90%;
+  padding: 14px 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #524A4E;
+}
+
+.input-form::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9D9B9B;
+  font-family: 'Poppins', sans-serif;
+}
+.btn{
+  background-color: #FF5C8D;
+  color: #fff;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #fa4771 ;
+}
+
+.forgot-password{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.form-group{
+  float: left;
+}
+.forgot{
+  float: right;
+  color: #524A4E;
+  font-weight: 600;
+}
+.forgot:hover{
+  float: right;
+  color: #2c282a;
+  font-weight: 600;
+}
+
+.create-account p{
+  color: #524A4E;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+.create-account .sign-up{
+  color: #FF5C8D;
+}
+.create-account .sign-up:hover{
+  color: #fa4771;
+}
+
+.line{
+  margin-top: 10px;
+  width: 1px;
+  background-color: #d3d3d3;
+}
+
+.right{
+  width: 60%;
+  align-items: center;
+}
+
+.wave{
+  position:fixed;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 550px;
+}
+
+.banner-image{
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .login {
+    padding: 40px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .login .left {
+      align-items: center;
+     width: 100%;
+  }
+  .login .left .logo .line {
+    margin-top: 10px;
+    width: 1px;
+  }
+  .login .left .logo img {
+    width: 100px;
+  }
+  .login .right {
+    width: 100%;
+  }
+  .login .right .wave{
+      width: 300px;
+  }
+  .login .right .banner-image{
+    width: 250px;
+  }
+  
+}
